@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+header{
+    nav{
+        .nav-head{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #F5F5F5;
+            h1{
+                margin-left:70px;
+            }
+            .signed{
+                display: flex;
+                justify-content: space-around;
+                margin-right: 70px;
+                hr{
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+                p{
+                    cursor: pointer;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+        .nav-bottom{
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+            ul{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                li{
+                    list-style-type: none;
+                    display: flex;
+                    align-items: center;    
+                    justify-content: center;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        font-weight: 700;
+                    } 
+                    &:nth-child(3){
+                        display: flex;
+                        justify-content: flex-end;
+                        padding-right: 40px;
+                    }    
+                    &:nth-child(4){
+                        display: flex;
+                        justify-content: flex-start;
+                        i{
+                            margin-right: 30px;
+                        }
+                    }       
+                } 
+                a{
+                    height: 100%;
+                    border-bottom: 2px solid transparent;
+                    &:hover{
+                        border-bottom: 2px solid black;
+                    }
+                }   
+                i{
+                    cursor: pointer;
+                }
+                .brand-selection{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                }
+                .search{
+                    position: relative;
+                    .input{
+                        display: block;
+                        width: 70%;
+                        padding: 2px;
+                        outline: none;
+                        border-radius: 5px;
+                        border: none;
+                        background-color: #F5F5F5;
+                        &:focus {
+                            border: 1px solid black;
+                            + {
+                                button{
+                                    color: red;
+                                }
+                            }
+                        }
+                    }
+                    button{
+                        background: transparent;
+                        border: none;
+                        cursor: pointer;
+                        display: inline-block;
+                        font-size: 15px;
+                        position: absolute;
+                        z-index: 2;
+                        i{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
