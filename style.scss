@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family: 'IBM Plex Sans', sans-serif;
 }
+
+body{
+    position: relative;
+}
+
 header{
     nav{
         .nav-head{
@@ -14,7 +19,7 @@ header{
             h1{
                 margin-left:70px;
             }
-            .signed{
+            .unsign{
                 display: flex;
                 justify-content: space-around;
                 margin-right: 70px;
@@ -116,3 +121,7 @@ header{
         }
     }
 } 
+
+.hidden{
+    display: none;
+}

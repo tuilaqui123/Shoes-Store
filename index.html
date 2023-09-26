@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/fontawsome/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./login-register/login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>webbangiay</title>
 </head>
 <body>
     <header>
@@ -16,12 +18,16 @@
         <nav>
             <div class="nav-head">
                 <h1>webbangiay</h1>
-                <div class="signed">
+                <div class="unsign">
                     <span>HOTLINE: 19002152</span>
                     <hr>
-                    <p>SIGN UP</p>
-                    <hr>
-                    <p>SIGN IN</p>
+                    <p onclick="signUp()" class="unsigned">SIGN UP</p>
+                    <hr class="unsigned">
+                    <p onclick="signIn()" class="unsigned">SIGN IN</p>
+                    <p class="signed hidden">
+                        <span>ACCOUNT</span>
+                        <i class="fa-solid fa-user"></i>
+                    </p>
                 </div>
             </div>
             <div class="nav-bottom">
@@ -52,8 +58,8 @@
         </nav>
     </header>
     <main>
-        <!-- Nội dung chính của trang -->
-        <!-- Nội dung này sẽ thay đổi cho mỗi trang cụ thể -->
-    </main>
+        <div id="display"></div>
+    </main>  
 </body>
+    <script src="./app.js"></script>
 </html>
