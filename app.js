@@ -1,6 +1,26 @@
-$(function () {
-    $("#display").load("./login-register/signUp.html");
-});
+Home();
+
+checkOut();
+
+
+function shoppingCart() {
+    $(function () {
+        $("#display").load("./shopping-cart/cart.html");
+    });
+}
+
+function checkOut() {
+    $(function () {
+        $("#display").load("./shopping-cart/checkout.html");
+    });
+}
+
+function Home() {
+    $(function () {
+        $("#display").load("./home-page/home.html");
+    });
+}
+
 function signIn() {
     $(function () {
         $("#display").load("./login-register/signIn.html");
@@ -12,6 +32,13 @@ function signUp() {
     });
 }
 
+function Account() {
+    $(function () {
+        $("#display").load("./account/account.html");
+    });
+}
+
+//----------------------------------------
 function Next() {
     $(function () {
         $(".first").addClass("hidden");
@@ -33,6 +60,9 @@ function SignIn() {
     });
     $(function () {
         $(".unsigned").addClass("hidden");
+    });
+    $(function () {
+        $("#display").load("./home-page/home.html");
     });
 }
 

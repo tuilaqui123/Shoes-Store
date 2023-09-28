@@ -7,6 +7,9 @@
 
 body{
     position: relative;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
 }
 
 header{
@@ -23,6 +26,7 @@ header{
                 display: flex;
                 justify-content: space-around;
                 margin-right: 70px;
+               // width: 40%;
                 hr{
                     margin-left: 10px;
                     margin-right: 10px;
@@ -121,6 +125,17 @@ header{
         }
     }
 } 
+
+#display{
+    height: auto;
+    border: 1px solid black;
+}
+
+footer{
+    height: 300px;
+    background-color: rgb(200, 200, 200);
+    margin-top: 150px;
+}
 
 .hidden{
     display: none;

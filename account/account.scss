@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.content{
+    .acc{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-weight: 700;
+        }
+        input{
+            margin: 0px;
+            margin-left: 20px;
+        }
+    }
+    
+}
