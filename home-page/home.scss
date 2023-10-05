@@ -48,6 +48,7 @@ main{
                     cursor: pointer;
                     .imgContain{
                         position: relative;
+                        
                         .img2{
                             position: absolute;
                             left: 0px;
@@ -94,7 +95,7 @@ main{
         align-items: center;
         margin: auto;
         cursor: pointer;
-
+        margin-bottom: 50px;
         .imgContain{
             position: relative;
             i{

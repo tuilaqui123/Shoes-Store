@@ -3,20 +3,34 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 .content{
     .acc{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         p{
             font-weight: 700;
+            width: 200px;
         }
+        
         input{
             margin: 0px;
             margin-left: 20px;
         }
+        .stg{
+            width: 370px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .edit{
+                width: auto;
+                border-bottom: 2px solid black;
+                cursor: pointer;
+            }
+        }
     }
-    
 }
 

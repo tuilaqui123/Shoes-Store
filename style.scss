@@ -37,6 +37,29 @@ header{
                         color: red;
                     }
                 }
+                .userMenu{
+                    position: absolute;
+                    background-color: white;
+                    height: auto;
+                    width: 120px;
+                    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+                    
+                    i{
+                        color: white;
+                    }
+                    p{
+                        padding-top: 15px;
+                        margin-left: 10px;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        &:hover{
+                             color: green;
+                        }
+                    }
+                    
+                }
             }
         }
         .nav-bottom{

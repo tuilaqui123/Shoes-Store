@@ -26,7 +26,7 @@
     <header>
       <!-- Thanh điều hướng -->
       <nav>
-        <div class="nav-head">
+        <div class="nav-head" id="nav-head">
           <h1>webbangiay</h1>
           <div class="unsign">
             <span>HOTLINE: 19002152</span>
@@ -34,10 +34,18 @@
             <p onclick="signUp()" class="unsigned">SIGN UP</p>
             <hr class="unsigned" />
             <p onclick="signIn()" class="unsigned">SIGN IN</p>
-            <p class="signed hidden" onclick="Account()">
-              <span>ACCOUNT</span>
-              <i class="fa-solid fa-user"></i>
-            </p>
+            <div class="userAccount">
+              <p class="signed hidden" onclick="userMenu()">
+                <span>ACCOUNT</span>
+                <i class="fa-solid fa-user"></i>
+              </p>
+              <div class="userMenu hidden">
+                <p onclick="Account(); userMenu()">My Account <i class="fa-solid fa-user"></i></p>
+                <p onclick="userMenu(); Shipping();">Order <i class="fa-solid fa-truck-fast"></i></p>
+                <p onclick="userMenu(); Fav();">Favourite <i class="fa-solid fa-heart"></i></p>
+                <p onclick="userMenu(); LogOut();" style="margin-bottom: 40px;">Log out <i class="fa-solid fa-right-from-bracket"></i></p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="nav-bottom">
@@ -45,12 +53,12 @@
             <li style="width: 20%" onclick="Home()"><a href="#">HOME</a></li>
             <li style="width: 50%">
               <div class="brand-selection">
-                <a href="#">NIKE</a>
-                <a href="#">ADIDAS</a>
-                <a href="#">BITIS</a>
-                <a href="#">VANS</a>
-                <a href="#">NEW BALANCE</a>
-                <a href="#">CONVERSE</a>
+                <a href="#" onclick="BrandItem()">NIKE</a>
+                <a href="#" onclick="BrandItem()">ADIDAS</a>
+                <a href="#" onclick="BrandItem()">BITIS</a>
+                <a href="#" onclick="BrandItem()">VANS</a>
+                <a href="#" onclick="BrandItem()">NEW BALANCE</a>
+                <a href="#" onclick="BrandItem()">CONVERSE</a>
               </div>
             </li>
             <li style="width: 20%" class="search">
