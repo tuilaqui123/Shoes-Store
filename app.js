@@ -1,6 +1,6 @@
 Home();
 
-Fav();
+Shoe();
 
 function shoppingCart() {
     $(function () {
@@ -77,7 +77,14 @@ function Home() {
 
 function signIn() {
     $(function () {
-        $("#display").load("./login-register/signIn.html");
+        // $("#display").load("./login-register/signIn.html");
+        $.ajax({
+            url: "./login-register/signIn.html",
+            dataType: "html",
+            success: function (data) {
+                $("#display").html(data);
+            }
+        });
         $('html, body').animate({
             scrollTop: $("#nav-head").offset().top
         }, 0);
@@ -166,3 +173,32 @@ function check() {
 }
 
 //-----------------------
+function favouriteShoe() {
+    $(function () {
+        $(".favouriteShoe").toggleClass("fa-solid");
+        $(".favouriteShoe").toggleClass("fa-regular");
+    });
+}
+
+function inc() {
+    var quantity = document.getElementById("quantity");
+    ++quantity.value
+}
+
+function dec() {
+    var quantity = document.getElementById("quantity");
+    if (quantity.value > 1) --quantity.value
+}
+
+function choseImg(clickedImg) {
+    const images = document.querySelectorAll('.asideImg');
+    images.forEach(img => img.classList.remove('chose'));
+
+    clickedImg.classList.add('chose');
+
+    const imgDisplay = document.getElementById('imgDisplay');
+
+    if (clickedImg.classList.contains('chose'))
+        imgDisplay.src = clickedImg.getAttribute('src');
+    // alert(clickedImg.getAttribute('src'));
+}

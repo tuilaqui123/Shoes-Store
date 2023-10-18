@@ -9,15 +9,15 @@
     <main class="shoe">
         <div class="shoeImg">
             <aside>
-                <img src="./images/shoeimg.jpg" alt="asideImg">
-                <img src="./images/Air Jordan 1 Mid 1.jpg" alt="asideImg">
-                <img src="./images/shoeimg2.jpg" alt="asideImg">
-                <img src="./images/shoeimg.jpg" alt="asideImg">                
+                <img src="./images/shoeimg.jpg" alt="asideImg" class="asideImg chose" onclick="choseImg(this)" >
+                <img src="./images/Air Jordan 1 Mid 1.jpg" alt="asideImg" class="asideImg" onclick="choseImg(this)">
+                <img src="./images/shoeimg2.jpg" alt="asideImg" class="asideImg" onclick="choseImg(this)">
+                <img src="./images/shoeimg.jpg" alt="asideImg" class="asideImg" onclick="choseImg(this)">                
             </aside>
-            <img src="./images/shoeimg.jpg" alt="shoe">
+            <img src="./images/shoeimg.jpg" alt="shoe" id="imgDisplay">
         </div>
         <div class="shoeDetail">
-            <h3>JORDAN 1 MID RACING BOI FIRE SUPER LIT</h3>
+            <h2>JORDAN 1 MID RACING BOI FIRE SUPER LIT</h2>
             <p style="margin-bottom: 30px;">White | Low top</p>
             <ul>
                 <li>
@@ -26,15 +26,37 @@
                 </li>
                 <li>
                     <p>Size:</p>
-                    <select name="" id="">
-                        <option value="">34</option>
-                        <option value="">35</option>
-                        <option value="">36</option>
+                    <select>
+                        <option>34</option>
+                        <option>35</option>
+                        <option>36</option>
                     </select>
                 </li>
                 <li>
                     <p>Quantity</p>
-                    <input type="number">
+                    <div class="quantityButton">
+                        <button class="dec" onclick="dec()">
+                            <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <input type="number" value="1" id="quantity">
+                        <button class="inc" onclick="inc()">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </li>
+                <li class="decription">
+                    <p>
+                        Max style, Max feel. The Air Max SYSTM brings back everything you love about your favourite '80s models, including throwback varsity colours. Tried-and-tested Nike Air cushioning is paired with a sleek, sport-inspired upper. It's Air Max delivering again.
+                    </p>
+                </li>
+                <li class="shoeButton">
+                    <button>
+                        <p>ADD TO CART</p>
+                    </button>
+                    <button onclick="shoppingCart()">
+                        <p>BUY NOW</p>
+                    </button>
+                    <i class="fa-regular fa-heart favouriteShoe" onclick="favouriteShoe()"></i>
                 </li>
             </ul>
         </div>

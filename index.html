@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="./login-register/login.css" />
     <link rel="stylesheet" href="./account/account.css" />
     <link rel="stylesheet" href="./shopping-cart/itemdisplay.css" />
-    <link rel="stylesheet" href="./home-page/home.css">
-    <link rel="stylesheet" href="./shoe/shoe.css">
+    <link rel="stylesheet" href="./home-page/home.css" />
+    <link rel="stylesheet" href="./shoe/shoe.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;700&display=swap"
-      rel="stylesheet" 
+      rel="stylesheet"
     />
     <title>webbangiay</title>
   </head>
@@ -40,10 +40,18 @@
                 <i class="fa-solid fa-user"></i>
               </p>
               <div class="userMenu hidden">
-                <p onclick="Account(); userMenu()">My Account <i class="fa-solid fa-user"></i></p>
-                <p onclick="userMenu(); Shipping();">Order <i class="fa-solid fa-truck-fast"></i></p>
-                <p onclick="userMenu(); Fav();">Favourite <i class="fa-solid fa-heart"></i></p>
-                <p onclick="userMenu(); LogOut();" style="margin-bottom: 40px;">Log out <i class="fa-solid fa-right-from-bracket"></i></p>
+                <p onclick="Account(); userMenu()">
+                  My Account <i class="fa-solid fa-user"></i>
+                </p>
+                <p onclick="userMenu(); Shipping();">
+                  Order <i class="fa-solid fa-truck-fast"></i>
+                </p>
+                <p onclick="userMenu(); Fav();">
+                  Favourite <i class="fa-solid fa-heart"></i>
+                </p>
+                <p onclick="userMenu(); LogOut();" style="margin-bottom: 40px">
+                  Log out <i class="fa-solid fa-right-from-bracket"></i>
+                </p>
               </div>
             </div>
           </div>
@@ -76,7 +84,31 @@
       </nav>
     </header>
     <main id="display"></main>
-    <footer></footer>
+    <footer>
+      <ul>
+        <li>
+          <h3>About website</h3>
+          <p>HELP</p>
+          <p>FEED BACK</p>
+          <p>CONTACT</p>
+        </li>
+        <li>
+          <h3>About us</h3>
+          <p>21520419@gm.uit.edu.vn</p>
+          <p>21520419@gm.uit.edu.vn</p>
+          <p>21520419@gm.uit.edu.vn</p>
+          <p>21520419@gm.uit.edu.vn</p>
+          <p>21520419@gm.uit.edu.vn</p>
+          <p>21520419@gm.uit.edu.vn</p>
+        </li>
+        <li>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-square-twitter"></i>
+          <i class="fa-brands fa-square-github"></i>
+        </li>
+      </ul>
+    </footer>
   </body>
   <script src="./app.js"></script>
 </html>

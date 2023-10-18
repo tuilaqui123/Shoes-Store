@@ -152,13 +152,46 @@ header{
 #display{
     height: auto;
     padding: 0px;
-    border: 1px solid black;
 }
 
 footer{
     height: 300px;
-    background-color: rgb(200, 200, 200);
+    background-color: black;
     margin-top: 150px;
+    padding: 50px;
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        li{
+            display: flex;
+            flex-direction: column;
+            p{
+                color: white;
+                cursor: pointer;
+                margin-bottom: 10px;
+                font-weight: 500;
+                &:hover{
+                    color: aqua;
+                }
+            }
+            h3{
+                color: white;
+                cursor: pointer;
+                margin-bottom: 10px;
+            }
+            i{
+                color: white;
+                font-size: 30px;
+                cursor: pointer;
+                margin-bottom: 10px;
+                &:hover{
+                    color: aqua;
+                }
+            }
+        }
+    }
 }
 
 .hidden{
