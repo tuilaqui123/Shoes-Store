@@ -1,4 +1,8 @@
 main{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     .banner{
         img{
             height: 450px;

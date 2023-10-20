@@ -3,37 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/fontawsome/css/all.min.css">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.3.0-web/fontawsome/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;700&display=swap" rel="stylesheet">
     <title>Login</title>
 </head>
 <body>
-    <main class="first">
+    
+    <main class="first" id="first header">
         <h1>webbangiay</h1>
         <div class="inputBox">
             <input type="text" placeholder="PHONE NUMBER">
             <input type="password" placeholder="PASSWORD">
             <input type="password" placeholder="CONFIRM PASSWORD">
-        </div>
-        <button type="submit" onclick="Next()"><p>NEXT</p></button>
-    </main>
-    <main class="second hidden">
-        <i class="fa-solid fa-circle-user" style="font-size: 70px;"></i>
-        <div class="inputBox">
             <input type="text" placeholder="NAME">
             <input type="text" placeholder="BIRTHDAY">
             <input type="text" placeholder="ADDRESS">
         </div>
-        <button type="submit" onclick="SignUp()"><p>SIGN UP</p></button>
-    </main>
-    <div class="noti hidden" onclick="cancelNoti()">
-        <div class="screen">
-            <i class="fa-regular fa-circle-check"></i>
-            <p>CONGRATULATIONS! <br>
-            YOUR ACCOUNT HAS BEEN SUCCESFULLY CREATED</p>
+        <button type="submit" onclick="SignUp()"><p>NEXT</p> </button>
+        <div class="noti hidden" onclick="cancelNoti()">
+            <div class="screen">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>CONGRATULATIONS! <br>
+                YOUR ACCOUNT HAS BEEN SUCCESFULLY CREATED</p>
+            </div>
         </div>
-    </div>
+    </main>
 </body>
+<script src="../app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </html>

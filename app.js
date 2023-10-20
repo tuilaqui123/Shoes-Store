@@ -1,126 +1,78 @@
 Home();
 
-Shoe();
+function routerPage(url) {
+    document.getElementById('frame').src = url
+    document.addEventListener("DOMContentLoaded", function () {
+        var iframe = document.getElementById("frame");
+        iframe.addEventListener("load", function () {
+            var iframeDocument = iframe.contentDocument;
+            if (iframeDocument) {
+                var contentHeight = iframeDocument.body.scrollHeight;
+                document.getElementById('display').style.height = contentHeight + 'px';
+            }
+        });
+    });
+}
 
 function shoppingCart() {
-    $(function () {
-        $("#display").load("./shopping-cart/cart.html");
-        $('html, body').animate({
-            scrollTop: $("#nav-head").offset().top
-        }, 0);
-    });
+    routerPage('./shopping-cart/cart.html')
 }
 
 function Fav() {
-    $(function () {
-        $("#display").load("./home-page/fav.html");
-        $('html, body').animate({
-            scrollTop: $("#nav-head").offset().top
-        }, 0);
-    });
+    routerPage('./home-page/fav.html')
 }
 
 function BrandItem() {
-    $(function () {
-        $("#display").load("./home-page/brandItem.html");
-        $('html, body').animate({
-            scrollTop: $("#nav-head").offset().top
-        }, 0);
-    });
+    routerPage('./home-page/brandItem.html')
 }
 
-function checkOut() {
-    $(function () {
-        $("#display").load("./shopping-cart/checkout.html");
-        $('html, body').animate({
-            scrollTop: $("#nav-head").offset().top
-        }, 0);
-    });
+function BrandItemIframe() {
+    location.href = '../home-page/brandItem.html'
+    window.parent.document.getElementById('header').scrollIntoView(true);
+}
+
+function CheckOut() {
+    location.href = '../shopping-cart/checkout.html'
+    window.parent.document.getElementById('header').scrollIntoView(true);
 }
 
 function Shipping() {
-    $(function () {
-        $("#display").load("./shopping-cart/shipping.html");
-        $('html, body').animate({
-            scrollTop: $("#nav-head").offset().top
-        }, 0);
-    });
+    routerPage("./shopping-cart/shipping.html")
 }
 
 function Shoe() {
-    $(function () {
-        $("#display").load("./shoe/shoe.html");
-        $('html, body').animate({
-            scrollTop: $("#nav-head").offset().top
-        }, 0);
-    });
-
+    location.href = '../shoe/shoe.html'
+    window.parent.document.getElementById('header').scrollIntoView(true);
 }
 
 function orderDetail() {
-    $(function () {
-        $("#display").load("./shopping-cart/orderDetail.html");
-        $('html, body').animate({
-            scrollTop: $("#nav-head").offset().top
-        }, 0);
-    });
+    location.href = '../shopping-cart/orderDetail.html'
+    window.parent.document.getElementById('header').scrollIntoView(true);
 }
 
 function Home() {
-    $(function () {
-        $("#display").load("./home-page/home.html");
-        $('html, body').animate({
-            scrollTop: $("#nav-head").offset().top
-        }, 0);
-    });
+    routerPage('./home-page/home.html')
 }
 
 function signIn() {
-    $(function () {
-        // $("#display").load("./login-register/signIn.html");
-        $.ajax({
-            url: "./login-register/signIn.html",
-            dataType: "html",
-            success: function (data) {
-                $("#display").html(data);
-            }
-        });
-        $('html, body').animate({
-            scrollTop: $("#nav-head").offset().top
-        }, 0);
-    });
+    routerPage('./login-register/signIn.html')
 }
+
 function signUp() {
-    $(function () {
-        $("#display").load("./login-register/signUp.html");
-        $('html, body').animate({
-            scrollTop: $("#nav-head").offset().top
-        }, 0);
-    });
+    routerPage('./login-register/signUp.html')
+
 }
 
 function Account() {
-    $(function () {
-        $("#display").load("./account/account.html");
-        $('html, body').animate({
-            scrollTop: $("#nav-head").offset().top
-        }, 0);
-    });
+    routerPage('./account/account.html')
 }
 
 //----------------------------------------
-function Next() {
-    $(function () {
-        $(".first").addClass("hidden");
-    });
-    $(function () {
-        $(".second").removeClass("hidden");
-    });
-}
 
 function SignUp() {
     $(function () {
         $(".noti").removeClass("hidden");
+        window.parent.document.getElementById('header').scrollIntoView(true);
     });
 }
 
@@ -131,15 +83,8 @@ function userMenu() {
 }
 
 function SignIn() {
-    $(function () {
-        $(".signed").removeClass("hidden");
-    });
-    $(function () {
-        $(".unsigned").addClass("hidden");
-    });
-    $(function () {
-        $("#display").load("./home-page/home.html");
-    });
+    location.href = "../home-page/home.html"
+    window.parent.document.getElementById('header').scrollIntoView(true);
 }
 
 function LogOut() {
@@ -149,18 +94,12 @@ function LogOut() {
     $(function () {
         $(".unsigned").removeClass("hidden");
     });
-    $(function () {
-        $("#display").load("./home-page/home.html");
-    });
+    routerPage('./home-page/home.html')
 }
 
 function cancelNoti() {
-    $(function () {
-        $(".noti").addClass("hidden");
-    });
-    $(function () {
-        $("#display").load("./login-register/signIn.html");
-    });
+    location.href = '../login-register/signIn.html';
+    window.parent.document.getElementById('header').scrollIntoView(true);
 }
 
 function check() {

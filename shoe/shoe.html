@@ -2,19 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="./shoe.css">
+    <link rel="stylesheet" href="../login-register/login.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.3.0-web/fontawsome/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
     <main class="shoe">
         <div class="shoeImg">
             <aside>
-                <img src="./images/shoeimg.jpg" alt="asideImg" class="asideImg chose" onclick="choseImg(this)" >
-                <img src="./images/Air Jordan 1 Mid 1.jpg" alt="asideImg" class="asideImg" onclick="choseImg(this)">
-                <img src="./images/shoeimg2.jpg" alt="asideImg" class="asideImg" onclick="choseImg(this)">
-                <img src="./images/shoeimg.jpg" alt="asideImg" class="asideImg" onclick="choseImg(this)">                
+                <img src="../images/shoeimg.jpg" alt="asideImg" class="asideImg chose" onclick="choseImg(this)" >
+                <img src="../images/Air Jordan 1 Mid 1.jpg" alt="asideImg" class="asideImg" onclick="choseImg(this)">
+                <img src="../images/shoeimg2.jpg" alt="asideImg" class="asideImg" onclick="choseImg(this)">
+                <img src="../images/shoeimg.jpg" alt="asideImg" class="asideImg" onclick="choseImg(this)">                
             </aside>
-            <img src="./images/shoeimg.jpg" alt="shoe" id="imgDisplay">
+            <img src="../images/shoeimg.jpg" alt="shoe" id="imgDisplay">
         </div>
         <div class="shoeDetail">
             <h2>JORDAN 1 MID RACING BOI FIRE SUPER LIT</h2>
@@ -53,7 +57,7 @@
                     <button>
                         <p>ADD TO CART</p>
                     </button>
-                    <button onclick="shoppingCart()">
+                    <button onclick="CheckOut()">
                         <p>BUY NOW</p>
                     </button>
                     <i class="fa-regular fa-heart favouriteShoe" onclick="favouriteShoe()"></i>
@@ -62,4 +66,5 @@
         </div>
     </main>
 </body>
+<script src="../app.js"></script>
 </html>

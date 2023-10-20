@@ -7,7 +7,6 @@ body{
     position: relative;
 }
 main{
-    padding-top: 50px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -43,6 +42,9 @@ main{
         border-radius: 5px;
         cursor: pointer;
         transition: 0.1s;
+        a{
+            text-decoration: none;
+        }
         p{
             width: 170px;
             color: #FFF;
@@ -54,42 +56,44 @@ main{
             background-color: #6262B2;
         }
     }
-}
-
-
-.noti{
-    background-color: rgba(128, 128, 128, 0.232);
-    height: 140%;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    .screen{
-        background-color: white;
-        border: 1px solid black; 
-        border-radius: 10px;
-        width: 570px;
-        height: 310px;
+    .noti{
+        //background-color: rgba(128, 128, 128, 0.232);
+        height: 110%;
+        width: 100%;
+        position: absolute;
+        z-index: 3;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
-        i{
-            font-size: 70px;
-            color: #009131;
-        }
-        p{
-            text-align: center;
-            font-weight: 700;
+        .screen{
+            background-color: white;
+            border: 1px solid black; 
+            border-radius: 10px;
+            width: 570px;
+            height: 310px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            i{
+                font-size: 70px;
+                color: #009131;
+            }
+            p{
+                text-align: center;
+                font-weight: 700;
+            }
         }
     }
 }
+
+
+
 .hidden{
-    display: none;
+    display: none !important;
 }

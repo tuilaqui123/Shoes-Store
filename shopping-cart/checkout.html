@@ -3,89 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./itemdisplay.css">
+    <link rel="stylesheet" href="../login-register/login.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-6.3.0-web/fontawsome/css/all.min.css"
+    />
     <title>Document</title>
 </head>
 <body>
-    <div class="cart" style="margin-top: 100px;">
-        <div class="addressInfo">
-            <h1>ENTER YOUR NAME AND ADDRESS</h1>
-            <div class="inputBox">
-                <input type="text" placeholder="Full Name">
-                <input type="text" placeholder="City/Province">
-                <input type="text" placeholder="District">
-                <input type="text" placeholder="Ward">
-                <input type="text" placeholder="Address">
-                <input type="text" placeholder="Phone Number">
-            </div>
-            <div class="payMethod">
-                <h3>PAYMENT METHOD</h3>
-                <label>
-                    <i class="fa-solid fa-caret-down"></i>
-                    <select>
-                        <option>COD</option>
-                        <option>BANK TRANSFER</option>
-                        <option>CREDIT CARD</option>
-                    </select>
-                </label>
-            </div>
-            <button type="submit"><p>ORDER</p></button>
-        </div>
-        <div class="orderSummary">
-            <h3>ORDER SUMMARY</h3>
-            <div class="summary">
-                <h3>Summary</h3>
-                <div class="sumTotal" style="margin-bottom: 0px;">
-                    <h4>Subtotal</h4>
-                    <h4>9.999.999 VND</h4>
+    <main class="cartmain">
+        <div class="cart">
+            <div class="addressInfo">
+                <h1>ENTER YOUR NAME AND ADDRESS</h1>
+                <div class="inputBox">
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="City/Province">
+                    <input type="text" placeholder="District">
+                    <input type="text" placeholder="Ward">
+                    <input type="text" placeholder="Address">
+                    <input type="text" placeholder="Phone Number">
                 </div>
-                <div class="sumTotal" style="margin-top: 0px;">
-                    <h4>Estimated Delivery & Handling</h4>
-                    <h4>0 VND</h4>
+                <div class="payMethod">
+                    <h3>PAYMENT METHOD</h3>
+                    <label>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <select>
+                            <option>COD</option>
+                            <option>BANK TRANSFER</option>
+                            <option>CREDIT CARD</option>
+                        </select>
+                    </label>
                 </div>
-                <hr>
-                <div class="sumTotal">
-                    <h3>Total</h3>
-                    <h3>9.999.999</h3>
-                </div>
+                <button type="submit"><p>ORDER</p></button>
             </div>
-            <div class="cartItems">
-                <div class="Items"> 
-                    <img id="imageItem" src="./images/shoeimg.jpg" alt="shoe">
-                    <div class="detail">
-                        <div class="context">
-                            <h3 style="margin-bottom: 20px;">Air Jordan 1 Mid</h3>
-                            <h5 style="margin-bottom: 20px;">Purple | High Top</h5>
-                            <p>
-                                <span>Size: 40</span>
-                                |
-                                <span>Quantity: 1</span>
-                            </p>
-                        </div>
-                        <div class="price">
-                            <h3>9.999.999 VND</h3>
-                        </div>
+            <div class="orderSummary">
+                <h3>ORDER SUMMARY</h3>
+                <div class="summary">
+                    <h3>Summary</h3>
+                    <div class="sumTotal" style="margin-bottom: 10px;">
+                        <h4>Subtotal</h4>
+                        <h4>9.999.999 VND</h4>
+                    </div>
+                    <div class="sumTotal" style="margin-top: 0px;">
+                        <h4>Estimated Delivery & Handling</h4>
+                        <h4>0 VND</h4>
+                    </div>
+                    <hr>
+                    <div class="sumTotal">
+                        <h3>Total</h3>
+                        <h3>9.999.999</h3>
                     </div>
                 </div>
-                <div class="Items"> 
-                    <img id="imageItem" src="./images/shoeimg.jpg" alt="shoe">
-                    <div class="detail">
-                        <div class="context">
-                            <h3 style="margin-bottom: 20px;">Air Jordan 1 Mid</h3>
-                            <h5 style="margin-bottom: 20px;">Purple | High Top</h5>
-                            <p>
-                                <span>Size: 40</span>
-                                |
-                                <span>Quantity: 1</span>
-                            </p>
-                        </div>
-                        <div class="price">
-                            <h3>9.999.999 VND</h3>
+                <div class="cartItems">
+                    <div class="Items"> 
+                        <img id="imageItem" src="../images/shoeimg.jpg" alt="shoe">
+                        <div class="detail">
+                            <div class="context">
+                                <h3 style="margin-bottom: 20px;">Air Jordan 1 Mid</h3>
+                                <h5 style="margin-bottom: 20px;">Purple | High Top</h5>
+                                <p>
+                                    <span>Size: 40</span>
+                                    |
+                                    <span>Quantity: 1</span>
+                                </p>
+                            </div>
+                            <div class="price">
+                                <h3>9.999.999 VND</h3>
+                            </div>
                         </div>
                     </div>
+                    <div class="Items"> 
+                        <img id="imageItem" src="../images/shoeimg.jpg" alt="shoe">
+                        <div class="detail">
+                            <div class="context">
+                                <h3 style="margin-bottom: 20px;">Air Jordan 1 Mid</h3>
+                                <h5 style="margin-bottom: 20px;">Purple | High Top</h5>
+                                <p>
+                                    <span>Size: 40</span>
+                                    |
+                                    <span>Quantity: 1</span>
+                                </p>
+                            </div>
+                            <div class="price">
+                                <h3>9.999.999 VND</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-                
             </div>
         </div>
-    </div>
+    </main>
+    
 </body>
+<script src="../app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </html>
